@@ -32,12 +32,25 @@
                 <input type="search"  placeholder="search">
             <i class="search fa-solid fa-search"></i>
             </div>
-            
-
           <i class="cart fa-solid fa-cart-plus"><span>7</span></i>
           <i class="profile fa-solid fa-user"><span>+99</span></i>
         </div>
       </nav>
     </header>
+    <section class="hero">
+
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+    
+    // Toggle menu when hamburger icon is clicked
+    hamburger.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});
+    </script>
   </body>
 </html>
