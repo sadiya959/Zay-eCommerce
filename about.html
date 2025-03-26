@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zay Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- hamburger -->
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- Navigation Menu -->
+      <nav class="container menu">
+        <div class="logo">
+          <a href="#/">Zay</a>
+        </div>
+        <ul class="menu-link">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="icons">
+          <div class="search-bar">
+            <input type="search" placeholder="search" />
+            <i class="search fa-solid fa-search"></i>
+          </div>
+          <i class="cart fa-solid fa-cart-plus"><span>7</span></i>
+          <i class="profile fa-solid fa-user"><span>+99</span></i>
+        </div>
+      </nav>
+    </header>
+    <!-- about hero  -->
+    <section class="about-hero-section">
+      <div class="container about-hero">
+        <div class="about-info">
+          <h1>About Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <img
+          src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/about-hero.svg"
+          alt="cartoon"
+        />
+      </div>
+    </section>
+
+    <!--  Services -->
+      <section class="Services-section">
+        <div class="container">
+       <div class="service-info">
+        <h2 class="title">Our Services</h2>
+        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit
+             amet.</p>
+       </div>
+       <div class="services">
+        <div class="service">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Delivery Services</h3>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-right-left"></i>
+            <h3>Shipping & Return</h3>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-percent"></i>
+            <h3>Promotion</h3>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-user"></i>
+            <h3>24 Hours Service</h3>
+        </div>
+       </div>
+            </div>
+      </section>
+
+      <!-- brands section  -->
+       <section class="brands-section">
+        <div class="container">
+            <h3 class="title">Our Brands</h3>
+        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem <br> ipsum dolor sit amet.</p>
+        <div class="brands">
+            <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/brand_01.png" alt="logo">
+            <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/brand_02.png" alt="logo">
+            <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/brand_03.png" alt="logo">
+            <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/brand_04.png" alt="logo">
+        </div>
+        </div>
+       </section>
+
+       <!-- footer  -->
+       <footer>
+        <div class="container footer">
+          <div class="links">
+         <div class="contact">
+          <h4 class="zay">Zay Shop</h4>
+          <ul>
+            <li> 123 Consectetur at ligula 10660</li>
+            <li><a href="#"> 010-020-0340</a></li>
+            <li><a href="#"> info@company.com</a></li>
+          </ul>
+         </div>
+         <div class="products-link">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#">Luxury</a></li>
+            <li><a href="#">Sport Wear</a></li>
+            <li><a href="#">Men's Shoes</a></li>
+            <li><a href="#">Women's Shoes</a></li>
+            <li><a href="#">Popular Dress</a></li>
+            <li><a href="#">Gym Accessories </a></li>
+            <li><a href="#">Sport Shoes</a></li>
+          </ul>
+         </div>
+         <div class="further-info">
+          <h4>Further Info</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop Locations</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+         </div>
+        </div>
+        <div class="mail-icons">
+          <div class="contact-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="mail">
+            <input type="email" name="subscribe" placeholder="Email Address">
+            <label for="subscribe">Subscribe</label>
+          </div>
+         </div>
+        </div>
+      </footer>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.querySelector(".hamburger");
+          const menu = document.querySelector(".menu");
+  
+          // Toggle menu when hamburger icon is clicked
+          hamburger.addEventListener("click", function () {
+            menu.classList.toggle("active");
+          });
+        });
+      </script>
+  </body>
+</html>
