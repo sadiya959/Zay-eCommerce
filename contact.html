@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zay Shop</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="contact.css">
+      </head>
+<body>
+  <div class="top-header">
+    <div class="container top">
+      <div class="flex-info">
+        <p><i class="fa-solid fa-envelope"></i> info@company.com </p>
+        <p><i class="fa-solid fa-phone"></i> 010-020-0340</p>
+      </div>
+      <div class="top-header-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+  </div>
+    <!-- header -->
+    <header>
+        <!-- hamburger -->
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="container menu">
+          <div class="logo">
+            <a href="#/">Zay</a>
+          </div>
+          <ul class="menu-link">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <div class="icons">
+            <div class="search-bar">
+              <input type="search" placeholder="search" />
+              <i class="search fa-solid fa-search"></i>
+            </div>
+            <i class="cart fa-solid fa-cart-plus"><span>7</span></i>
+            <i class="profile fa-solid fa-user"><span>+99</span></i>
+          </div>
+        </nav>
+      </header>
+
+<!-- contact hero  -->
+<section class="contact-hero-section">
+    <div class="contact-hero">
+    <div class="container">
+        <h1 class="title">Contact Us</h1>
+        <p class="desc">
+            Proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- map  -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31569.911786550667!2d47.3649895!3d8.4761284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sso!4v1743011537167!5m2!1sen!2sso" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <form action="register">
+        <div class="container register">
+            <label class="name" for="name">
+                Name
+                <input type="text" name="name" placeholder="Name">
+            </label>
+        <label class="email" for="email">
+            Email
+            <input type="email" name="email" placeholder="Email">
+        </label>
+        <label class="subject" for="subject">
+            Subject
+            <input type="text" name="subject" placeholder="subject">
+        </label>
+        <label class="message" for="message">
+            Message
+            <textarea rows="8" name="message" placeholder="Message"></textarea>
+        </label>
+        <button type="submit" class="btn">Let's Talk</button>
+    </div>
+    </form>
+
+<!-- footer  -->
+    <footer>
+      <div class="container footer">
+        <div class="links">
+       <div class="contact">
+        <h4 class="zay">Zay Shop</h4>
+        <ul>
+          <li> 123 Consectetur at ligula 10660</li>
+          <li><a href="#"> 010-020-0340</a></li>
+          <li><a href="#"> info@company.com</a></li>
+        </ul>
+       </div>
+       <div class="products-link">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Luxury</a></li>
+          <li><a href="#">Sport Wear</a></li>
+          <li><a href="#">Men's Shoes</a></li>
+          <li><a href="#">Women's Shoes</a></li>
+          <li><a href="#">Popular Dress</a></li>
+          <li><a href="#">Gym Accessories </a></li>
+          <li><a href="#">Sport Shoes</a></li>
+        </ul>
+       </div>
+       <div class="further-info">
+        <h4>Further Info</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Shop Locations</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="mail-icons">
+        <div class="contact-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="mail">
+          <input type="email" name="subscribe" placeholder="Email Address">
+          <label for="subscribe">Subscribe</label>
+        </div>
+       </div>
+      </div>
+    </footer>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.querySelector(".hamburger");
+          const menu = document.querySelector(".menu");
+  
+          // Toggle menu when hamburger icon is clicked
+          hamburger.addEventListener("click", function () {
+            menu.classList.toggle("active");
+          });
+        });
+      </script>
+</body>
+</html>

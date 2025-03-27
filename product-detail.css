@@ -1,0 +1,187 @@
+section{
+    background-color: #e9eef5;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.main-image{
+    width: 32rem;
+    height: 32rem;
+}
+
+.images-slider img{
+width: 8rem;
+height: 8rem;
+}
+
+.images-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+
+.images-slider button{
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 900;
+}
+
+.product-detail{
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+
+.product-detail-info{
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.product-detail-info h2{
+font-size: 1.875rem;
+font-weight: 300;
+}
+
+.product-detail-info .price{
+    font-size: 1.375rem;
+    font-weight: 300;
+    }
+    
+
+.rating-comments{
+    display: flex;
+    gap: 5px;
+}
+
+.rating-comments .stars i:nth-child(5){
+    color: #6c757d;
+}
+
+.rating-comments span, p{
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+
+
+.brand-p ,.color-p{
+    color: #bcbcbc;
+    font-weight: 300;
+}
+
+.decs-p{
+    font-weight: 300;
+}
+
+
+
+.brand-span, .desc-span, .colors-span, .list-span{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #212529;
+}
+    
+
+ul li{
+    list-style: none;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.size-quantity{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.size-quantity button{
+    background-color: #59ab6e;
+    color: #fff;
+    margin: 0 .2rem;
+}
+
+.count{
+    background-color: #6c757d;
+    color: #fff;
+padding: .1rem .4rem;
+font-size: 0.875rem;
+font-weight: 700;
+border-radius: 2px;
+}
+
+
+.product-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.product-btns button{
+    width:100%;
+    background-color: #59ab6e;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+
+
+.related h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+.related-roducts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 4rem;
+
+}
+
+.shop-product{
+    width: 18rem;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    
+.product-detail{
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.main-image{
+    width: 100%;
+    height: 100%;
+}
+.related-roducts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.shop-product{
+    width: 15rem;
+}
+}

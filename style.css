@@ -36,6 +36,42 @@ header {
   align-items: center;
 }
 
+
+
+
+.top-header{
+  height: auto;
+  background-color: #212934;
+  color: #cfd6e1
+  ;
+  padding: .5rem 0;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.top{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 7rem;
+}
+
+.top-header-icons{
+  display: flex;
+  gap: 1rem;
+}
+
+.top-header-icons i{
+ font-size: 0.6875rem;
+ font-weight: 300;
+}
+
+
+.flex-info{
+  display: flex;
+  gap: 1rem;
+}
+
 .hamburger {
   display: none;
 }
@@ -214,9 +250,9 @@ header {
   height: 21.3125rem;
 }
 
-.Categories h3 {
-  font-size: 1.25rem;
-  font-weight: 500;
+.Categories-section .title {
+  font-weight: 200;
+  text-align: center;
 }
 
 .Categories .btn {
@@ -276,16 +312,14 @@ header {
   font-weight: 300;
 }
 
-.flex i {
+.stars i {
   font-size: 1.125rem;
   line-height: 1.125rem;
   font-weight: 900;
   color: #ede861;
 }
 
-.product-1 .starts:nth-child(1) {
-  color: red;
-}
+
 
 .product h4 {
   font-size: 1.875rem;
@@ -398,112 +432,116 @@ footer a {
 }
 
 
+@media (max-width: 900px) {
+
+  /* header */
+  header {
+    height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 7%;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+  }
+
+  .menu h1 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.4rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-link {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-link,
+  .icons {
+    display: none;
+  }
+
+  .menu.active .menu-link,
+  .menu.active .icons {
+    display: flex;
+  }
+
+  .menu-link {
+    gap: 1rem;
+  }
+
+  .icons {
+    margin-bottom: 2rem;
+  }
+
+  .search-bar {
+    position: relative;
+    width: auto;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 0.625rem 2.1875rem 0.625rem 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+  }
+
+  .search-bar i {
+    position: absolute;
+    right: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+
+  
+  .hero-info {
+    order: 1;
+  }
+
+  .hero img {
+    width: 20rem;
+    height: auto;
+  }
+
+
+  .hero-info .desc {
+    font-size: 1.125rem;
+  }
+  
 
 
 
-/* About page  */
+  .top-header{
+    display: none;
+  }
 
-.about-hero-section{
-  background-color: #59AB6E;
-  color: #fff;
-  height: 85vh;
+
 }
 
-.about-hero{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
 
-.about-hero .about-info{
-  width: 67%;
-}
-
-.about-hero h1{
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-.about-hero p{
-  font-size: 1.125rem;
-  line-height: 1.6875;
-  font-weight: 300;
-}
-
-.about-hero img{
-  width: 20em;
-}
-
-
-.Services-section{
-margin-top: 4rem;
-margin-bottom: 4rem;
-}
-
-.services{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.service{
-  box-shadow: 0px  3px 15px #ccc;
-  width: 17rem;
-  height: 12.0625rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 2rem;
-  gap: 1rem;
-  border-radius: 8px;
-}
-
-
-.service i{
-  font-size: 4rem;
-  color: #69bb7e;
-}
-
-.service h3{
-  font-weight: 500;
-}
-
-.service-info .title{
-  text-align: center;
-}
-
-
-
-.brands-section{
-  background-color: #e9eef5;
-  height: 70vh;
-  padding-top: 4rem;
-}
-
-
-.brands-section h3{
-  text-align: center;
-  margin-bottom: 1rem;
-
-}
-
-.brands{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-
-.brands img{
-  width: 6rem;
-  height: 4rem;
-}
 
 
 
@@ -538,6 +576,7 @@ margin-bottom: 4rem;
     justify-content: start;
     align-items: start;
     gap: 2rem;
+    transition: transform 0.3s ease-in-out;
   }
 
   .menu-link {
@@ -611,6 +650,7 @@ margin-bottom: 4rem;
     flex-direction: column;
   }
 
+
   .products {
     flex-direction: column;
   }
@@ -624,39 +664,5 @@ margin-bottom: 4rem;
     padding: 0;
     gap: 1rem;
   }
-
-
-.about-hero{
-  flex-direction: column;
-  align-items: start;
-}
-.about-hero img{
-  flex-direction: column;
-  align-self: center;
-  gap: 4rem;
-}
-
-.about-hero .about-info{
-  width: 100%;
-}
-
-.services{
-flex-direction: column;
-}
-
-.service{
-  width: 60%;
-}
-
-
-.service h3{
-  margin-bottom: 0;
-}
-
-
-.brands img{
-  width: 3rem;
-  height: 2rem;
-}
 
 }
