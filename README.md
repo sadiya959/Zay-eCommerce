@@ -1,5 +1,3 @@
-Zay E-Commerce Website
-Description:
 Zay E-Commerce is a responsive e-commerce website built with HTML and CSS. The website showcases a clean and modern design suitable for an online store.
 
 Features
