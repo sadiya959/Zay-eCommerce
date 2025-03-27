@@ -9,5 +9,5 @@ Static pages including a home page, product listings, and more.
 
 Demo
 You can view the live demo of the website here:
-Zay E-Commerce Website
+https://zay-e-commerce.vercel.app/
 
